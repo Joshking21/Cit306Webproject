@@ -1,0 +1,231 @@
+.mainBody{
+background-color: black;
+color: white;
+}
+.homeSection{
+    margin-bottom: 10rem;
+}
+
+.mainNav{
+    display: flex;
+    justify-content: space-between;
+background-color: red;
+}
+.heading{
+display: flex;
+
+  
+}
+.headingList{
+    justify-self: center;
+    background-color: red;
+    display: flex;
+    list-style: none;
+    width: max-content;
+}
+.greenGhostLogo{
+    float: left;
+}
+.firstMainBody{
+ font-size: large;
+    width: 20rem;
+    text-align: center;
+}
+.firstMainHeader{
+    margin-bottom: 1rem;
+    width: 15rem;
+    margin-left: 3rem;
+    font-weight: 1000;
+    font-size: xx-large;
+}
+.registerButton{
+    background-color: black;
+    color: white;
+    border-color: white;
+    border-radius: 0.2rem;
+    padding: 0.4rem;
+}
+.firstButton{
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+.eventHeaderDiv{
+    margin-bottom: 1.5rem;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-left: 3rem;
+}
+.timerDiv{
+    display: flex;
+    margin-bottom: 3rem;
+    
+}
+.middleDiv{
+    margin-top: 5rem;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+.timerNumber{
+    border-color: white;
+    border-style: ridge;
+    font-weight: bolder;
+    font-size: xx-large;
+    padding: 0.7rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+
+}
+.divider{
+    font-weight: bolder;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    margin-right: 0.5rem;
+   margin-top: -1rem;
+}
+
+.thirdDiv{
+    
+    margin-left: 12rem;
+    font-weight: bolder;
+    font-size: xx-large
+;
+
+width: 70%;
+text-align: center;
+margin-bottom: 3rem;
+}
+.fourthDiv{
+    font-weight: 300;
+    font-size: large;
+    margin-bottom: 3rem;
+
+}
+.lastDiv{
+    
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    text-align: center;
+}
+.comments{
+    border-style: ridge;
+    border-width: 0.01rem;
+    border-radius: 0.2rem;
+    margin-bottom: 2rem;
+    width: 25rem;
+    margin-right: 3rem;
+}
+.hyphen{
+    background-color: red;
+
+}
+img{
+    width: 1rem;
+}
+.meet{
+ 
+    display: flex;
+    justify-self: center;
+   
+    font-weight: bolder;
+    font-size: x-large;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.aboutDiv{
+    
+    width: 70%;
+    height: 13rem;
+    justify-self: center;
+margin-bottom: 3rem;
+border-radius: 0.3rem;
+border-style: ridge;
+border-width: 0.1rem;
+}
+.aboutSection img{
+    width: 13rem;
+    height: 13rem;
+
+}
+.innerAboutDiv{
+   
+    width: 70%;
+    margin-left: 5rem;
+}
+.aboutSection h1{
+    margin-left: 1rem;
+}
+
+.secondAboutDiv{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin-bottom: 8rem;
+    
+    text-align: center;
+    width: 80%;
+}
+.secondAboutDiv h1{
+   
+    display: flex;
+    align-self: center;
+    
+}
+.weHave{
+    font-weight: bolder;
+    text-align: center;
+}
+.mentorsDiv{
+   
+    margin-right: 7rem;
+    margin-bottom: 7rem;
+    margin-top: 2rem;
+}
+.mentorNum{
+    text-align: center;
+  
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.sponsor{
+    
+    text-align: center;
+    font-size: x-large;
+}
+.sponsorImages{
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+.sponsorImages img{
+margin-right: 4rem;
+margin-bottom: 3rem;
+}
+.projectHeader{
+    
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    font-weight: bolder;
+    font-size: x-large;
+}
+.projectDiv{
+    border-color: aliceblue;
+    border-style: ridge;
+    width: 20rem;
+    align-items: center;
+    text-align: center;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    height: 15rem;
+    border-radius: 0.3rem;
+}
+.moveButton{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-right: 3rem;
+    border-style: none;
+}
