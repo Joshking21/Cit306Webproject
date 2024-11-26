@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .mainBody{
 background-color: black;
 color: white;
@@ -7,36 +11,83 @@ color: white;
 }
 
 .mainNav{
-    display: flex;
-    justify-content: space-between;
-background-color: red;
+    
+   display: flex;
+   justify-content: center;
+   position: relative;
+
 }
 .heading{
-display: flex;
+display:flex;
+
+
 
   
 }
+.headingList li:hover{
+    opacity: 0.6;
+}
 .headingList{
-    justify-self: center;
-    background-color: red;
-    display: flex;
     list-style: none;
-    width: max-content;
+    display: flex;
+   
 }
+/*
+@media screen and (min-width:481px) and (max-width: 768px){
+    .mainNav{
+    
+    }
+    .greenGhostLogo{
+  background-color: blue;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  
+    }
+    .headingList{
+        position: relative;
+   background-color: red;
+   width: 100%;
+   margin-top: 3rem;
+     
+    }
+}
+ */
+
+    
+
 .greenGhostLogo{
-    float: left;
+  position: absolute;
+  left: 0;
+  margin-left: 2rem;
+    
 }
+li{
+    margin-right: 4em;
+}
+
 .firstMainBody{
  font-size: large;
-    width: 20rem;
+    width: 20em;
+  
     text-align: center;
+    
+    align-self: center;
+  
 }
+
+ 
 .firstMainHeader{
-    margin-bottom: 1rem;
-    width: 15rem;
-    margin-left: 3rem;
+    margin-bottom: 1em;
+    /* width: 15rem; */
+    margin-left: rem;
+    /* justify-self: center;
+    align-self: center; */
+    
     font-weight: 1000;
     font-size: xx-large;
+   
+   
 }
 .registerButton{
     background-color: black;
@@ -44,6 +95,9 @@ display: flex;
     border-color: white;
     border-radius: 0.2rem;
     padding: 0.4rem;
+}
+.registerButton:hover{
+    opacity: 0.7;
 }
 .firstButton{
     margin-top: 2rem;
@@ -77,6 +131,12 @@ display: flex;
     margin-bottom: 0.5rem;
 
 }
+
+
+
+.num4{
+    width: 1.8rem;
+}
 .divider{
     font-weight: bolder;
     font-size: xx-large;
@@ -90,25 +150,26 @@ display: flex;
     
     margin-left: 12rem;
     font-weight: bolder;
-    font-size: xx-large
-;
-
+    font-size: xx-large;
 width: 70%;
 text-align: center;
 margin-bottom: 3rem;
 }
+
 .fourthDiv{
     font-weight: 300;
     font-size: large;
     margin-bottom: 3rem;
+    justify-self: center;
+    text-align: center;
 
 }
 .lastDiv{
     
-    display: flex;
-    justify-self: center;
+    /* display: flex;
+    justify-self: center; */
     flex-direction: column;
-    text-align: center;
+    /* text-align: center; */
 }
 .comments{
     border-style: ridge;
@@ -117,13 +178,19 @@ margin-bottom: 3rem;
     margin-bottom: 2rem;
     width: 25rem;
     margin-right: 3rem;
+    padding: 1rem 1rem 1rem 1rem;
+}
+.comments div{
+   
+    text-align: right;
 }
 .hyphen{
-    background-color: red;
+
 
 }
 img{
-    width: 1rem;
+    width: 2rem;
+    border-radius: 0.4rem;
 }
 .meet{
  
@@ -135,8 +202,13 @@ img{
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+.commentsDiv{
+    display: flex; 
+     justify-self: center;
+     
+}
 .aboutDiv{
-    
+    display: flex; margin-left: 15rem;
     width: 70%;
     height: 13rem;
     justify-self: center;
@@ -144,7 +216,19 @@ margin-bottom: 3rem;
 border-radius: 0.3rem;
 border-style: ridge;
 border-width: 0.1rem;
+background-color: rgba(0, 0, 0,0);
+box-shadow: 0.1px 0.1px  15px rgba(255, 255, 255, 0.8);
 }
+.div1{
+    display: flex; margin-left: -15rem;
+}
+
+
+.secondRegisterButton{
+    align-self: center; margin-left: -6rem;
+}
+
+
 .aboutSection img{
     width: 13rem;
     height: 13rem;
@@ -154,6 +238,11 @@ border-width: 0.1rem;
    
     width: 70%;
     margin-left: 5rem;
+}
+.innerAboutDiv2{
+    width: 70%;
+    margin-left: 5rem;
+
 }
 .aboutSection h1{
     margin-left: 1rem;
@@ -202,6 +291,7 @@ border-width: 0.1rem;
 .sponsorImages img{
 margin-right: 4rem;
 margin-bottom: 3rem;
+border-radius: 50%;
 }
 .projectHeader{
     
@@ -219,8 +309,9 @@ margin-bottom: 3rem;
     text-align: center;
     margin-right: 2rem;
     margin-bottom: 2rem;
-    height: 15rem;
+    height:18rem;
     border-radius: 0.3rem;
+    background-color: rgba(0, 0, 0,0);
 }
 .moveButton{
     width: 3rem;
@@ -228,4 +319,573 @@ margin-bottom: 3rem;
     border-radius: 50%;
     margin-right: 3rem;
     border-style: none;
+    font-weight: bolder;
+    font-size: large;
 }
+.attachment{
+    margin-top: 21rem; z-index: -1; position: absolute; margin-left: 55rem;
+
+}
+.attachment img{
+    width: 15rem;
+    height: 15rem;
+}
+.projectDiv img{
+    width: 6rem;
+    margin-top: 1rem;
+    
+}
+.allProjects{
+   
+    width: 43rem;
+    overflow-x: hidden;
+}
+.leftHand{
+   transition: transform 1.5s ease-in-out;
+}
+.rightHand{
+    transition: transform 1.5s ease-in-out;
+}
+.button1{
+    color: white;
+    background-color: black;
+}
+.mentorNums{
+    margin-top: 2rem;
+    display: flex; 
+    align-self: center;
+ 
+    padding-left: 7rem;
+}
+
+.signupDiv{
+    margin-top: 3rem; padding-left: 1rem
+    ;
+    width: fit-content;
+}
+
+
+
+.registerDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.signIn{
+    align-self: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+.under{
+    align-self: center;
+    margin-bottom: 5rem;
+}
+.mainRegisterDiv{
+    align-self: center;
+    display: flex;
+   background-color: rgba(0, 0, 0,0);
+/* width: 50%; */
+    height: 19rem;
+    border-style: ridge;
+    border-radius: 1rem;
+    margin-bottom: 15rem;
+    /* margin-left: 2rem; */
+    
+  
+  
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    
+  
+    
+    
+}
+.textDiv{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    width: 100%;
+   
+    margin-top: 3rem;
+    margin-left: 1rem;
+
+}
+.signUpButtons{
+ width: 30%; 
+align-self: center;
+height: 2.2rem;
+border-radius: 2rem;
+border-style: none;
+font-weight: bold;
+}
+.signUpButtons:hover{
+    opacity: 0.8;
+}
+.login:hover{
+    opacity: 0.8;
+}
+.registerButtons{
+
+}
+.followUs img:hover{
+    opacity: 0.7;
+}
+.picturesInformtion{
+    display: none;
+}
+input{
+    align-self: center;
+    margin-bottom: 0.8rem;
+    background-color: rgba(0, 0, 0,0);
+width: 90%;
+border-radius: 2rem;
+border-style: ridge;
+border-color: white;
+border-width: 0.1rem;
+height: 1.9rem;
+color: white;
+padding-left: 1rem;
+
+}
+input::placeholder{
+    color: white;
+    opacity: 60%;
+
+}
+.or{
+    width: 80%;
+}
+.googleSignUp{
+    margin-bottom: 1rem;
+}
+.projectHeading{
+  
+    width: 70%;
+    font-weight: bold;
+    justify-self: center;
+    font-size: x-large;
+    margin-top: 0.7rem;
+}
+@media screen and (max-width: 480px){
+    .aboutDiv{
+        margin-left: 0rem;
+        width: 100%;
+        height: 15rem;
+        
+    }
+    .aboutSection img{
+        width: 9rem;
+        width: 9rem;
+    }
+    .mainNav{
+    display: flex;
+    flex-direction: column;
+margin-left: -1rem;
+    }
+    .greenGhostLogo{
+ 
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-left: 0rem;
+  
+    }
+    .headingList{
+       
+   
+   width: 80%;
+   margin-left: 1.3rem;
+   justify-self: center;
+  
+     
+    }
+    li{
+        margin-right: 2.5em;
+        
+    }
+    .firstMainHeader{
+        margin-bottom: 1em;
+        /* width: 15rem; */
+        margin-left: 3rem;
+        justify-self: center;
+        align-self: center;
+        
+        font-weight: 1000;
+        font-size: xx-large;
+     
+       
+    }
+    .firstMainBody{
+        font-size: large;
+           width: 100%;
+           text-align: center;
+           
+       }
+       .timerNumber{
+        border-color: white;
+        border-style: ridge;
+        font-weight: bolder;
+        font-size: xx-large;
+       
+        
+        margin-right: 0.3rem;
+        margin-bottom: 0.5rem;
+    
+    }
+    .eventHeaderDiv{
+        margin-left: 0rem;
+        
+        text-align: center;
+    }
+    .timerDiv{
+        display: flex;
+        margin-bottom: 3rem;
+       
+       
+        width: fit-content;
+        justify-self: center;
+    }
+    .divider{
+        font-weight: bolder;
+        font-size: xx-large;
+        display: flex;
+        align-items: center;
+        margin-right: 0.5rem;
+       margin-top: -1rem;
+    }
+   
+
+
+
+    .lastDiv{
+            
+            display: inline;
+            /* justify-self: center; */
+            flex-direction: column;
+            text-align: center;
+           
+        }
+
+    .thirdDiv{
+    
+        margin-left: 0rem;
+        font-weight: bolder;
+        font-size: large;
+   
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+    }
+.commentsDiv{
+    flex-direction: column;
+    
+    
+    
+    width:100%;
+}
+.comments{
+    margin-right: 0rem;
+    width: 90%;
+    justify-self: center;
+}
+footer{
+    flex-direction: column;
+}
+    .followUs{
+        text-align: right;
+       
+        width: 50%;
+      
+        align-self: flex-end;
+    }
+    .follow{
+        text-align: left;
+       
+       
+    }
+  .secondRegisterButton{
+    margin-left: -4rem;
+  }
+  .innerAboutDiv{
+   
+    width: 100%;
+    margin-left: 0rem;
+    height: 9.2rem;
+    overflow-y: scroll;
+    padding-left: 0.4rem;
+  }
+  .innerAboutDiv2{
+    padding-left: 0rem;
+    width: 100%;
+    margin-left: 0rem;
+    height: 9.2rem;
+    overflow-y: scroll;
+   
+  }
+  .mentorNums{
+    
+    width: fit-content;
+    padding-left: 0rem;
+   
+    
+  }
+  .mentorsDiv{
+   
+    margin-right: 1rem;
+    margin-left: 0rem;
+    margin-bottom: 7rem;
+    margin-top: 2rem;
+}
+.sponsorImages{
+    margin-top: 3rem;
+    margin-left: 1rem;
+    align-self: center;
+   
+    width: fit-content;
+}
+
+.sponsorImages img{
+    margin-right: 1.5rem;
+    margin-bottom: 3rem;
+    width: 6rem;
+    height: 6rem;
+    }
+    .attachment{
+        margin-top: 15rem; z-index: -1; position: absolute; margin-left: 10rem;
+    
+    }
+    .allProjects{
+   
+        width: 17rem;
+     
+        overflow-x: visible;
+        
+    }
+    .projectDiv{
+        border-color: aliceblue;
+        border-style: ridge;
+        width: 7.5rem;
+        align-items: center;
+        text-align: center;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+        height:fit-content;
+        border-radius: 0.3rem;
+        background-color: rgba(0, 0, 0,0);
+    }
+    .projectDiv img{
+        width: 6rem;
+        margin-top: 1rem;
+        
+    }
+    .mainRegisterDiv{
+        align-self: center;
+        display: flex;
+       background-color: rgba(0, 0, 0,0);
+        width: 100%;
+        height: fit-content;
+        border-style: ridge;
+        border-radius: 1rem;
+        margin-bottom: 15rem;
+        margin-left: 0rem;
+       
+      
+    }
+    .form{
+        flex-direction: column;
+    }
+    input{
+        margin-bottom: 1rem;
+        background-color: rgba(0, 0, 0,0);
+    width: 100%;
+    border-radius: 2rem;
+    border-style: ridge;
+    border-color: white;
+    border-width: 0.1rem;
+    height: 1.9rem;
+    color: white;
+    padding-left: 1rem;
+    
+    }
+    .textDiv{
+        display: flex;
+       
+        margin-bottom: 0rem;
+        flex-direction: column;
+        width: 80%;
+        margin-top: 2rem;
+        margin-left: 1rem;
+    
+    }
+    .signUpButtons{
+        width: 70%;
+        
+        height: 2.2rem;
+        border-radius: 2rem;
+        border-style: none;
+        font-weight: bold;
+        }
+        .login{
+            display: block;
+           
+        width: 100%;
+        text-align: center;
+        }
+        .or{
+            display: none;
+        }
+        .signupDiv{
+            display: flex;
+            flex-direction: row;
+         align-items: center;
+         align-content: center;
+         text-align: center;
+         width: 80%;
+         justify-self: center;
+         align-self: center;
+         margin-top: 0.5rem;
+        
+        }
+        .normalSignUp{
+            width: 30%;
+           
+        }
+        .secondSocials{
+            margin-top: -1rem;
+        }
+        .googleSignUp{
+            margin-bottom: 2rem;
+        }
+        .projectHeading{
+            height: 6.4rem;
+        }
+        .explanation{
+            display: none;
+        }
+        .picturesInformtion{
+            display: inline;
+             box-shadow: 5px 10px 15px rgba(255, 255, 255, 0.3);
+             width: 70%;
+             height: 10rem;
+             position: absolute;
+             transform: translateY(-38rem) translateX(3rem);
+             justify-self: center;
+             align-self: center;
+             border-style: ridge;
+             background-color: rgba(0, 0, 0,0.7);
+             /* transition: opacity 2s ease-in-out; */
+             opacity: 0;
+
+            }
+            .fadeOut{
+                animation: fadeOut 1s linear  forwards;
+              
+            }
+           
+
+            @keyframes fadeOut {
+                0%{
+                    opacity: 1;
+                }
+                100%{
+                    opacity: 0;
+                }
+            
+            }
+            .fadeIn{
+                animation: fadeIn 1s linear forwards;
+              
+            }
+
+            @keyframes fadeIn {
+                0%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            
+            }
+         
+           
+         
+            .fadeSectionIn{
+                animation: blur 1s linear forwards;
+            }
+            @keyframes blur {
+                0%{
+                    filter: blur(0px);
+                }
+                100%{
+                    filter: blur(6px);
+                }
+                
+            }
+            .fadeSectionOut{
+                animation: blurOut 1s linear forwards;
+            }
+            @keyframes blurOut {
+                0%{
+                    filter: blur(6px);
+                }
+                100%{
+                    filter: blur(0px);
+                }
+                
+            }
+
+
+
+
+
+            .projectTitle{
+    display: none;
+              
+            }
+            .X{
+                
+                justify-self: end;
+                
+ 
+                flex-basis: content;
+                text-align: center;
+                transform: translateX(0rem);
+                width: fit-content;
+                height: 2.2rem;
+                
+             
+            }
+            .leftX{
+                
+                width: 2rem;
+                transform: rotate(55deg)  translateX(0.3rem) translateY(0rem);
+                transform-origin: top left;
+            height: 0.4rem;
+            }
+            .rightX{
+              
+                width: 2rem;
+                height: 0.4rem;
+                transform: rotate(130deg) translateX(-0.7rem) translateY(-1rem);
+                transform-origin: top left;
+                
+            }
+            .projectInformation{
+                margin-top: 1rem;
+                font-weight: bold;
+                overflow-wrap: break-word;
+                font-weight: bolder;
+                font-size: larger;
+                text-align: center;
+               
+                
+               
+            }
+
+    }
