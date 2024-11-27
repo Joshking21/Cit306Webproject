@@ -99,6 +99,8 @@ projectclick.addEventListener('click', function(){
  button1.addEventListener('click',function(){
 button1.style.backgroundColor="black"
 button1.style.color= "white"
+button2.style.fontSize='x-large';
+button1.style.fontSize = "large";
  button2.style.backgroundColor="white"
     button2.style.color= "black"
     leftHandSide.style.transform= "translateX(0%)"
@@ -109,6 +111,8 @@ button1.style.color= "white"
     button2.style.color= "white"
     button1.style.backgroundColor="white"
 button1.style.color= "black"
+button1.style.fontSize='x-large';
+button2.style.fontSize = "large";
 leftHandSide.style.transform= "translateX(-100%)"
     rightHandSide.style.transform= "translateX(-100%)"
      })
