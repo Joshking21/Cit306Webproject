@@ -1,6 +1,7 @@
 'Use Strict'
 
  const sections =Array.from (document.querySelectorAll('.sections'));
+ const form = document.createElement('form');
  console.log(sections);
 const aboutClick =  document.querySelector('.aboutClick');
 const projectclick =  document.querySelector('.projectClick');
@@ -26,7 +27,8 @@ const projectInformation =  document.querySelector('.projectInformation');
 const X =  document.querySelector('.X');
 const picturesInformtion =  document.querySelector('.picturesInformtion');
 const backProjectSection =  document.querySelector('.backProjectSection');
-
+const inputs = Array.from(document.querySelectorAll('input'));
+const signUpButton = document.querySelector('.normalSignUp')
 
 
 
@@ -160,3 +162,25 @@ let hours = hoursTimer.textContent;
     }
 
     startTimer(); 
+
+
+console.log(form);
+form.addEventListener('submit', function(e){
+  e.preventDefault();
+
+ }
+)
+console.log(inputs.value);
+let emailValue = document.querySelector('.email').value
+let firstNameValue = document.querySelector('.firstName').value
+let lastNameValue = document.querySelector('.lastName').value;
+let phoneNumberValue = document.querySelector('.phone').value;
+signUpButton.addEventListener('click', function(){
+  console.log(emailValue);
+  emailValue = "";
+  lastNameValue = "";
+  firstNameValue ="";
+  phoneNumberValue = "";
+ 
+
+})

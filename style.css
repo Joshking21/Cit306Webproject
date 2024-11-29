@@ -187,6 +187,7 @@ img {
   gap: 1rem;
 }
 .aboutDiv {
+  z-index: 1;
   display: flex;
   margin-left: 15rem;
   width: 70%;
@@ -206,7 +207,7 @@ img {
 
 .secondRegisterButton {
   align-self: center;
-  background-color: rebeccapurple;
+
 }
 .imageDiv{
 /* width: 50%;
@@ -214,12 +215,83 @@ img {
   
 }
 
+/* .attachment{
 
-.aboutSection img {
+  background-color: rgb(200, 160, 160)
+  ;
+  
+
+} */
+.tiffo1{
+  /* z-index: -1; */
+
+  /* position: absolute; */
+}
+.tiffoDIv{
+ 
+  /* width: 78.3rem; */
+  width: 100%;
+  margin-left: -1rem;
+
+  height:150rem;
+  
+  
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  
+ 
+}
+.aboutTiffoDiv{
+  height: 82rem;
+}
+.projectTiffoDiv{
+  height: 73rem;
+ 
+}
+.registerTiffoDiv{
+height: 57rem;
+}
+.leftTiffos{
+  z-index: -1;
+  transform: rotate(17deg) translateY(10rem);
+  position: absolute;
+  
+
+
+}
+.rightTiffos{
+  transform: rotate(-17deg)  translateY(60rem) translateX(110%) ;
+  /* margin-left: 90%; */
+
+
+z-index: -1;
+position: absolute;
+justify-content: right;
+align-self: baseline;
+text-align: right;
+
+width: fit-content;
+  
+}
+.leftTiffosdown{
+  z-index: -1;
+position: absolute;
+transform: rotate(17deg) translateY(100rem) translateX(27rem);
+
+}
+.rightTiffosdown{
+  z-index: -1;
+  position: absolute;
+  transform: rotate(-17deg) translateY(140rem) translateX(28rem);
+
+}
+.about img {
   width: 13rem;
   height: 13rem;
 
 }
+
 .innerAboutDiv {
   width: 70%;
   margin-left: 5rem;
@@ -311,15 +383,14 @@ text-align: center;
   font-size: large;
 }
 .attachment {
-  margin-top: 21rem;
-  z-index: -1;
-  position: absolute;
-  margin-left: 55rem;
+  /* width: 30rem; */
+
+ 
+ 
+  
+
 }
-.attachment img {
-  width: 15rem;
-  height: 15rem;
-}
+
 .projectDiv img {
   width: 6rem;
   margin-top: 1rem;
@@ -331,9 +402,10 @@ text-align: center;
   /* width: 43rem; */
   display: flex;
  
+ 
   /* justify-content: center; */
 
-  width: 43%;
+  width: 45%;
 justify-self: center;
 
 align-self: center;
@@ -342,6 +414,7 @@ align-self: center;
 .leftHand {
   transition: transform 1.5s ease-in-out;
   margin-left: 1rem;
+
 }
 .rightHand {
   transition: transform 1.5s ease-in-out;
@@ -391,6 +464,25 @@ align-self: center;
   margin-bottom: 15rem;
   /* margin-left: 2rem; */
 }
+.attachment{
+ animation: hollow 2s ease-in-out infinite;
+ width:50%;
+}
+@keyframes hollow{
+  0% {
+    transform: translateY(0px) ;
+
+  }
+  50%{
+    transform: translateY(-9px);
+  }
+100%{
+  transform: translateY(0px);
+}
+  
+}
+
+
 .form {
   display: flex;
   flex-direction: column;
@@ -465,7 +557,7 @@ input::placeholder {
     height: fit-content;
     flex-direction: column;
   }
-  .aboutSection img {
+  .about img {
   width: 80%;
   /* justify-self: center;
   align-self: center; */
@@ -533,7 +625,7 @@ input::placeholder {
 
     width: fit-content;
     justify-self: center;
-    background-color: rebeccapurple;
+   
   }
   .divider {
     font-weight: bolder;
@@ -626,20 +718,17 @@ input::placeholder {
     width: 6rem;
     height: 6rem;
   }
-  .attachment {
-    margin-top: 15rem;
-    z-index: -1;
-    position: absolute;
-    margin-left: 10rem;
-  }
+ 
   .allProjects {
 width: 100%;
     overflow-x: hidden ;
+   
   }
   .projectDiv {
     border-color: aliceblue;
     border-style: ridge;
     width: 7.5rem;
+    /* width: 100%; */
     align-items: center;
     text-align: center;
     margin-right: 2rem;
@@ -824,6 +913,91 @@ width: 100%;
     font-size: larger;
     text-align: center;
   }
+  
+li{
+  margin-right: 0em;
+}
+.middleDiv{
+  justify-self: last baseline;
+}
+
+
+
+.tiffoDIv{
+ 
+  /* width: 78.3rem; */
+
+  height:150rem;
+  
+position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  
+ 
+}
+.aboutTiffoDiv{
+  height: 82rem;
+  
+}
+.projectTiffoDiv{
+  height: 73rem;
+ 
+}
+.registerTiffoDiv{
+height: 57rem;
+}
+.leftTiffos{
+  z-index: -1;
+  transform: rotate(18deg) translateY(7rem) ;
+  /* position: absolute; */
+  
+
+
+}
+.rightTiffos{
+  transform: rotate(-17deg)  translateY(30rem) translateX(-7rem) ;
+  /* margin-left: 90%; */
+
+
+z-index: -1;
+position: absolute;
+justify-content: right;
+align-self: baseline;
+text-align: right;
+
+width: fit-content;
+  
+}
+.leftTiffosdown{
+  z-index: -1;
+position: absolute;
+transform: rotate(17deg) translateY(50rem) translateX(14rem);
+
+}
+.rightTiffosdown{
+  z-index: -1;
+  position: absolute;
+  transform: rotate(17deg) translateY(78rem) translateX(38rem);
+
+}
+.rightTiffosMiddle{
+  z-index: -1;
+  position: absolute;
+  transform: rotate(17deg) translateY(120rem) translateX(40rem);
+
+text-align: right;
+
+}
+.leftTiffosMiddle{
+  z-index: -1;
+  position: absolute;
+  transform: rotate(17deg) translateY(95rem) translateX(27rem);
+
+}
+.attachment{
+  width: 40%;
+}
+
 }
 @media screen and (max-width: 290px) {
 
@@ -836,11 +1010,3 @@ width: 100%;
   overflow: hidden;
 
 } */
-li{
-  margin-right: 0em;
-}
-.middleDiv{
-  justify-self: last baseline;
-}
-
-}
