@@ -276,6 +276,9 @@ transform: rotate(17deg) translateY(100rem) translateX(27rem);
   transform: rotate(-17deg) translateY(140rem) translateX(28rem);
 
 }
+.leftTiffosMiddle, .rightTiffosMiddle{
+  display: none;
+}
 .about img {
   width: 13rem;
   height: 13rem;
@@ -913,8 +916,13 @@ position: absolute;
   
  
 }
+.leftTiffosMiddle , .rightTiffosMiddle{
+  display: block;
+}
 .aboutTiffoDiv{
-  height: 82rem;
+  height: 120rem;
+ 
+
   
 }
 .projectTiffoDiv{
