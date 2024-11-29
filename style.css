@@ -82,9 +82,7 @@ li {
 .registerButton:hover {
   opacity: 0.7;
 }
-.firstButton {
-  /* margin-top: 2rem; */
-}
+
 .buttons {
   text-align: center;
 }
@@ -209,11 +207,7 @@ img {
   align-self: center;
 
 }
-.imageDiv{
-/* width: 50%;
-  height: 100%; */
-  
-}
+
 
 /* .attachment{
 
@@ -222,11 +216,7 @@ img {
   
 
 } */
-.tiffo1{
-  /* z-index: -1; */
 
-  /* position: absolute; */
-}
 .tiffoDIv{
  
   /* width: 78.3rem; */
@@ -347,9 +337,6 @@ text-align: center;
   margin-bottom: 3rem;
   border-radius: 50%;
 }
-.projectSection{
-  
-}
 .projectHeader {
   text-align: center;
   margin-top: 2rem;
@@ -382,15 +369,6 @@ text-align: center;
   font-weight: bolder;
   font-size: large;
 }
-.attachment {
-  /* width: 30rem; */
-
- 
- 
-  
-
-}
-
 .projectDiv img {
   width: 6rem;
   margin-top: 1rem;
@@ -572,7 +550,7 @@ input::placeholder {
     display: flex;
     flex-direction: column;
 
-    background-color: ;
+    
   }
   .greenGhostLogo {
     position: relative;
@@ -996,17 +974,4 @@ text-align: right;
 }
 .attachment{
   width: 40%;
-}
-
-}
-@media screen and (max-width: 290px) {
-
-/* .headingList{
-  gap: 1rem;
-  background-color: red;
-  justify-content: start;
-  justify-content: left;
-  align-content: start;
-  overflow: hidden;
-
-} */
+}}
