@@ -403,12 +403,12 @@
         <div class="signIn">Sign up here!</div>
         <div class="under">It'll only take a minute</div>
         <!-- <div class="mainRegisterDiv"> -->
-           <form action="" class="form mainRegisterDiv" onclick=" return false">
+           <form action="includes/formhandler.php" method="post" class="form mainRegisterDiv" onclick=" return false">
             <div class="textDiv">
-<input type="text" name="" placeholder="FirstName"   class="firstName">
-<input type="text" name="" placeholder="LastName" class="lastName">
-<input type="text" name="" placeholder="Email"   class="email">
-<input type="text" name="" placeholder="Phone no" class="phone">
+<input required type="text" name="" placeholder="FirstName"   class="firstName">
+<input required type="text" name="" placeholder="LastName" class="lastName">
+<input required type="text" name="" placeholder="Email"   class="email">
+<input required type="text" name="" placeholder="Phone no" class="phone">
                 
             </div>
            

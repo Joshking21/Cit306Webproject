@@ -166,7 +166,7 @@ let hours = hoursTimer.textContent;
 
 console.log(form);
 form.addEventListener('submit', function(e){
-  e.preventDefault();
+  // e.preventDefault();
 
  }
 )
@@ -176,11 +176,11 @@ let firstNameValue = document.querySelector('.firstName').value
 let lastNameValue = document.querySelector('.lastName').value;
 let phoneNumberValue = document.querySelector('.phone').value;
 signUpButton.addEventListener('click', function(){
-  console.log(emailValue);
-  emailValue = "";
-  lastNameValue = "";
-  firstNameValue ="";
-  phoneNumberValue = "";
+  // console.log(emailValue);
+  // emailValue = "";
+  // lastNameValue = "";
+  // firstNameValue ="";
+  // phoneNumberValue = "";
  
 
 })
