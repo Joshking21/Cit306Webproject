@@ -403,7 +403,7 @@
         <div class="signIn">Sign up here!</div>
         <div class="under">It'll only take a minute</div>
         <!-- <div class="mainRegisterDiv"> -->
-           <form action="includes/formhandler.php" method="post" class="form mainRegisterDiv" onclick=" return false">
+           <form action="includes/FutoProject/formHandler.php" method="post" class="form mainRegisterDiv">
             <div class="textDiv">
 <input required type="text" name="" placeholder="FirstName"   class="firstName">
 <input required type="text" name="" placeholder="LastName" class="lastName">
